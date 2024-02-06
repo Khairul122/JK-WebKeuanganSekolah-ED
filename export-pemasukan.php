@@ -11,15 +11,21 @@ ob_start();
 // HTML content for the PDF
 ?>
 <style>
-    h1, h4 {
+    h1,
+    h4 {
         text-align: center;
     }
+
     hr.custom-line {
-        margin-top: 0px; /* Atur jarak di atas garis */
-        margin-bottom: 10px; /* Atur jarak di bawah garis */
+        margin-top: 0px;
+        /* Atur jarak di atas garis */
+        margin-bottom: 10px;
+        /* Atur jarak di bawah garis */
         border: 0;
-        border-top: 1px solid #000; /* Ganti warna dan tipe garis sesuai kebutuhan */
+        border-top: 1px solid #000;
+        /* Ganti warna dan tipe garis sesuai kebutuhan */
     }
+
     .right-info {
         float: right;
         text-align: right;
@@ -56,12 +62,12 @@ ob_start();
     } ?>
 </table>
 
-<!-- <div class="right-info">
-    <p style="padding-right:55px;">Padang, <?php echo date('Y-m-d'); ?></p>
-    <p>Pimpinan Toko Alfara Motor</p>
+<div class="right-info" style="text-align: right;">
+    <p style="text-align: right; padding-right:108px;">Solok, <?php echo date('d F Y'); ?></p>
+    <p style="text-align: right;">Kepala Sekolah SDN 14 Hiliran Gumanti</p>
     <br>
-    <p style="padding-right:125px;">Pimpinan</p>
-</div> -->
+    <p style="text-align: right; padding-right:170px;">Kepala Sekolah</p>
+</div>
 
 <?php
 

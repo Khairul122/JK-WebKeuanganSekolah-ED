@@ -56,12 +56,12 @@ ob_start();
     } ?>
 </table>
 
-<!-- <div class="right-info">
-    <p style="padding-right:55px;">Padang, <?php echo date('Y-m-d'); ?></p>
-    <p>Pimpinan Toko Alfara Motor</p>
+<div class="right-info" style="text-align: right;">
+    <p style="text-align: right; padding-right:108px;">Solok, <?php echo date('d F Y'); ?></p>
+    <p style="text-align: right;">Kepala Sekolah SDN 14 Hiliran Gumanti</p>
     <br>
-    <p style="padding-right:125px;">Pimpinan</p>
-</div> -->
+    <p style="text-align: right; padding-right:170px;">Kepala Sekolah</p>
+</div>
 
 <?php
 

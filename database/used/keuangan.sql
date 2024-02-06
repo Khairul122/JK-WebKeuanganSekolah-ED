@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Jan 2024 pada 09.26
+-- Waktu pembuatan: 06 Feb 2024 pada 03.13
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -74,15 +74,16 @@ CREATE TABLE `pemasukan` (
   `id_pemasukan` int(11) NOT NULL,
   `tgl_pemasukan` date NOT NULL,
   `jumlah` int(11) NOT NULL,
-  `sumber` text NOT NULL
+  `sumber` text NOT NULL,
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pemasukan`
 --
 
-INSERT INTO `pemasukan` (`id_pemasukan`, `tgl_pemasukan`, `jumlah`, `sumber`) VALUES
-(1, '2024-01-20', 200000, 'APBD1');
+INSERT INTO `pemasukan` (`id_pemasukan`, `tgl_pemasukan`, `jumlah`, `sumber`, `status`) VALUES
+(1, '2024-01-20', 200000, 'APBD1', 1);
 
 -- --------------------------------------------------------
 
@@ -94,16 +95,17 @@ CREATE TABLE `pengeluaran` (
   `id_pengeluaran` int(11) NOT NULL,
   `tgl_pengeluaran` date NOT NULL,
   `jumlah` int(11) NOT NULL,
-  `sumber` text NOT NULL
+  `sumber` text NOT NULL,
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pengeluaran`
 --
 
-INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `jumlah`, `sumber`) VALUES
-(1, '2024-01-19', 30000, 'Beli buku12'),
-(22, '2024-01-20', 10000, 'Uang bensin');
+INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `jumlah`, `sumber`, `status`) VALUES
+(1, '2024-01-19', 30000, 'Beli buku12', 2),
+(22, '2024-01-20', 10000, 'Uang bensin', 2);
 
 --
 -- Indexes for dumped tables
